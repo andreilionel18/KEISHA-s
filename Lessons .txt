@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TLE - Second Quarter Lessons</title>
+<style>
+body {
+  background-image: url('code.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-family: Comic Sans MS;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  background-color: #C3B1E1;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #C3B1E1;
+  transition: 0.3s;
+  color: white;
+}
+
+h1:hover {
+  box-shadow: 0 0 45px #D8BFD8;
+  transform: scale(1.03);
+}
+
+/* LESSON BOX */
+.textbox {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  padding: 25px;
+  margin: 40px auto;
+  width: 85%;
+  font-size: 18px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.textbox:hover {
+  box-shadow: 0 0 35px rgba(255,255,255,0.6);
+  transform: scale(1.01);
+}
+
+/* LESSON TITLE */
+h2 {
+  text-align: center;
+  background-color: #C3B1E1;
+  color: white;
+  margin: -25px -25px 15px -25px;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 20px #C3B1E1;
+  transition: 0.3s;
+}
+
+h2:hover {
+  box-shadow: 0 0 40px #D8BFD8;
+  transform: scale(1.02);
+}
+
+/* H3 styling: smaller, centered, semi-transparent white */
+h3 {
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(195,177,225,0.5);
+  font-size: 24px;
+  margin: 0 auto 20px auto; /* center and space below */
+  width: fit-content;
+  transition: 0.3s;
+}
+
+h3:hover {
+  box-shadow: 0 0 30px rgba(195,177,225,0.8);
+  transform: scale(1.02);
+  background-color: ​rgba(255, 255, 255, 0.4);
+}
+
+/* TEXT BACKGROUND */
+.text-bg {
+  display: block;
+  background: rgba(255, 192, 203, 0.25);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 15px;
+  padding: 15px 25px;
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+.text-bg:hover {
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+  transform: scale(1.02);
+}
+
+/* SUMMARY BOX */
+.summary {
+  background: rgba(195,177,225,0.9);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(195,177,225,0.6);
+  transition: 0.3s;
+}
+
+.summary:hover {
+  box-shadow: 0 0 35px rgba(255,255,255,0.8);
+  transform: scale(1.01);
+}
+
+/* 🌸 Image Styling (centered) */
+.textbox img {
+  display: block;
+  margin: 0 auto; /* centers the image */
+  width: 600px;
+  max-width: 90%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.15);
+}
+
+.textbox img:hover {
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+  transform: scale(1.08);
+}
+
+    
+/* 🌸 RETURN BUTTON */
+.return-btn {
+  display: inline-block;
+  margin: 40px auto;
+  background: rgba(255, 182, 193, 0.3);
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 15px 35px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 30px;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.return-btn:hover {
+  background: rgba(255, 192, 203, 0.6);
+  box-shadow: 0 0 25px rgba(255,255,255,0.8);
+  transform: scale(1.08);
+}
+
+
+
+</style>
+</head>
+
+<body>
+  <h1>TLE / ICT 9 - SECOND QUARTER LESSONS</h1>
+
+  <!-- LESSON 1 -->
+  <div class="textbox">
+    <h2>Lesson 1: CSS</h2>
+    <img src="L1.jpg" alt="Lesson 1 Image">
+    <div class="text-bg">
+      <p><b>CSS</b> means <b>Cascading Style Sheets</b>. It controls how HTML elements look on a webpage and separates content (HTML) from design, making websites easier to manage and more attractive.</p>
+
+      <p><b>Why use CSS?</b><br>
+      • Saves time — one file can style many pages.<br>
+      • Keeps design consistent and organized.<br>
+      • Makes websites responsive and visually appealing.</p>
+
+      <p><b>Layers of a Webpage:</b><br>
+      1. <b>Content Layer (HTML):</b> structure and information.<br>
+      2. <b>Presentation Layer (CSS):</b> design, color, and layout.<br>
+      3. <b>Behavior Layer (JavaScript):</b> interactivity and function.</p>
+
+      <p><b>Benefits of CSS:</b><br>
+      • Faster and easier to maintain.<br>
+      • Improves website design and user experience.<br>
+      • Reduces repetitive coding.</p>
+    </div>
+
+    <div class="summary">
+      <b>Summary:</b><br>
+      CSS is essential for web design. It separates the structure (HTML) from the style, ensuring consistency, efficiency, and visual appeal. It works together with HTML and JavaScript to form the three main layers of a webpage — Content, Presentation, and Behavior.
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div class="textbox">
+    <h2>Lesson 2: Types of CSS</h2>
+    <img src="L2.jpg" alt="Lesson 2 Image">
+    <div class="text-bg">
+      <p><b>Structure of CSS:</b><br>
+      • <b>Selector</b> – chooses which element to style.<br>
+      • <b>Property</b> – the style feature to modify (e.g., color, font).<br>
+      • <b>Value</b> – the setting for the property (e.g., red, Arial).<br>
+      • <b>Declaration</b> – a single style instruction.<br>
+      • <b>Declaration Block</b> – group of declarations inside { }.</p>
+
+      <p><b>The Style Sheet and its Parts:</b><br>
+      • A style sheet tells the browser how to display webpage elements.<br>
+      • Every CSS file is made of instructions called statements that identify the elements to style and define how they appear.</p>
+
+      <p><b>How CSS Works:</b><br>
+      CSS separates content from appearance. HTML holds the content, while CSS defines the look. It helps browsers display pages consistently across devices.</p>
+
+      <p><b>Three Types of CSS:</b><br>
+      1. <b>External Style Sheet</b> – separate .css file; affects multiple pages.<br>
+      2. <b>Embedded (Internal) Style Sheet</b> – inside &lt;style&gt; tags.<br>
+      3. <b>Inline Style Sheet</b> – directly written in an HTML element.</p>
+
+      <p><b>Key Notes:</b><br>
+      • Use { }, :, and ; in CSS syntax.<br>
+      • CSS improves design, consistency, and site maintenance.<br>
+      • All modern browsers support CSS.</p>
+    </div>
+
+    <div class="summary">
+      <b>Summary:</b><br>
+      CSS defines how webpage elements look. It allows consistent, creative, and organized design by separating styling from content, making websites easier to update and maintain.
+    </div>
+  </div>
+
+  <!-- LESSON 3 -->
+  <div class="textbox">
+    <h2>Lesson 3: Style Properties</h2>
+
+    <!-- H3 Subtitle -->
+    <h3>Inline Stylesheet</h3>
+
+    <!-- First Image -->
+    <img src="inline code.jpg" alt="inline code">
+
+    <!-- Second Image -->
+    <img src="inline.jpg" alt="inline">
+
+    <div class="text-bg">
+      <p><b>Inline Stylesheet:</b> Inline styles apply CSS directly to an HTML element using the <code>style</code> attribute. This method overrides other stylesheets for that element.</p>
+
+      <p><b>Usage:</b><br>
+      • Quick changes to a single element.<br>
+      • Good for testing or temporary styling.<br>
+      • Not recommended for large-scale design due to maintenance difficulty.</p>
+    </div>
+
+<br><br><br>
+   
+    <!-- H3 Subtitle -->
+    <h3>Internal Stylesheet</h3>
+
+ <!-- First Image -->
+    <img src="internal code.jpg" alt="internal code">
+
+    <!-- Second Image -->
+    <img src="internal.jpg" alt="internal">
+
+     
+    <div class="text-bg">
+      <p><b>Internal Stylesheet:</b> CSS rules written inside a style tag within an HTML page.</p>
+
+      <p><b>Usage:</b><br>
+      • Page-Specific Styles.<br>
+      • Quick Testing.<br>
+      • Overrides External Styles.</p>
+    </div>
+
+<br><br><br>
+   
+    <!-- H3 Subtitle -->
+    <h3>External Stylesheet</h3> 
+
+ <!-- First Image -->
+    <img src="external code.jpg" alt="external code">
+
+    <!-- Second Image -->
+    <img src="style code.jpg" alt="style code">
+
+    <!-- Third Image -->
+    <img src="external.jpg" alt="external">
+
+    <div class="text-bg">
+      <p><b>External Stylesheet:</b>  CSS rules stored in a separate css file and linked to one or more HTML pages.</p>
+
+      <p><b>Usage:</b><br>
+      • Reusable Styles.<br>
+      • Easier Maintenance.<br>
+      • Clean HTML.</p>
+    </div>
+  </div>
+   
+ <!-- LESSON 4 -->
+  <div class="textbox">
+    <h2>Lesson 4: Types of Elements</h2>
+
+    <!-- First Image -->
+    <img src="div.jpg" alt="div">
+
+    <div class="text-bg">
+      <p> This website uses div tags so that using the styles intended will be easier.</p>
+    </div>
+
+      <div class="summary">
+      <b>Summary:</b><br>
+      The div tag is used to group HTML elements together. It allows you to apply CSS styles or JavaScript to multiple elements at once.
+    </div>
+  </div>
+
+ <!-- LESSON 5 -->
+  <div class="textbox">
+    <h2>Lesson 5: ID Selectors</h2>
+
+    <!-- First Image -->
+    <img src="IDselector.jpg" alt="IDselector">
+
+    <div class="text-bg">
+      <p> This website uses ID Selectors on div tags so that when using the styles needed it will be easier. This method is easy and convenient.</p>
+    </div>
+
+      <div class="summary">
+      <b>Summary:</b><br>
+      ID selectors in CSS target a specific HTML element with a unique id attribute. They allow you to apply styles to that single element only.
+    </div>
+  </div>
+
+<!-- LESSON 6 -->
+  <div class="textbox">
+    <h2>Lesson 6: Pseudo Classes</h2>
+
+    <!-- First Image -->
+    <img src="pseudoclass.jpg" alt="pseudoclass">
+
+    <div class="text-bg">
+      <p> This website also uses pseudo class to give off a hover effect but the example I used was in a different part of my website.</p>
+    </div>
+
+      <div class="summary">
+      <b>Summary:</b><br>
+      A pseudo-class in CSS styles an element based on its state or user interaction, like :hover or :focus. It lets you apply styles without adding extra classes or HTML.
+    </div>
+  </div>
+
+ <a href="file:///C:/Users/Keisha/Desktop/ALL%20ABOUT%20KEISHA/OPPO%20Phone/Grade%209/ICT%20E-Portfolio/ICT%20E-Portfolio%20.html" class="return-btn">Return to Homepage</a>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head><title> All About Me </title></head>
+<meta name="All about me" content="width=device-width, initial-scale=1">
+<style>
+
+
+body {
+  margin: 0px;
+  font-family: Comic Sans MS;
+  background-color: #F3CFC6;
+}
+
+/* Navigation Bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #F88379;
+      box-shadow: 0 0 15px rgba(248, 131, 121, 0.7);
+}
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      font-size: 23px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #E37383;
+      color: black;
+      text-shadow: 0 0 10px #fff, 0 0 20px #F33A6A, 0 0 30px #F33A6A;
+      transform: scale(1.05);
+    }
+
+    .topnav a.active {
+      background-color: #F33A6A;
+      color: white;
+    }
+
+
+div.scroll-container {
+  background-color: #E37383;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+div.scroll-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 25px rgba(248, 131, 121, 0.5);
+}
+
+/* Individual images inside scroll container */
+div.scroll-container img {
+  padding: 10px;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px; /* optional rounded corners */
+}
+
+div.scroll-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 200, 200, 0.9); /* glowing effect */
+}
+
+
+.text{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10%;
+  font-size: 30px;
+  background-color: #FFF5EE;
+  border: 1px solid #F88379;
+  padding: 25px 25px 25px 25px;
+  font-family: Comic Sans MS;
+}
+
+.video-section{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #F2D2BD;
+  padding: 20px;
+  border-top: 10px solid white;
+}
+
+.video-section video {
+  border:10px solid white;
+  border-radius: 10px;
+}
+
+/* Text hover effect */
+.text:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(248, 131, 121, 0.7);
+}
+
+/* Video section hover effect */
+.video-section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(248, 131, 121, 0.5);
+}
+
+.video-section video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(248, 131, 121, 0.7);
+}
+
+/* Header hover effect */
+h1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(248, 131, 121, 0.7);
+}
+
+/* Container hover effect */
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(248, 131, 121, 0.5);
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="All About me.html">Home</a>
+  <a href="mee.html">All About Me</a>
+  <a href="Friends.html">Friends</a>
+  <a href="Family.html">Family</a>
+</div>
+
+<h1 style=" background-color:#F88379; color: #FFF5EE; font-size: 65px; text-align: center; text-shadow: 3px 3px #F88379;"> All About Me </h1>
+
+<div class="container">
+  <img src="mi.png" alt="mi" width="30%" height="30%">
+  <p class="text">
+    Name: Keisha Elizbeth O. Mercado <br>
+    Age: 14 <br>
+    Birthday: April 22 2011<br>
+    Favorites: Drawing, art, anime, food, sleep, family, friends, Japan, reading and pink
+</p>
+</div>
+
+
+<div class="scroll-container">
+  <img src="one.jpg" alt="1" width="500" height="500">
+  <img src="two.jpg" alt="2" width="500" height="500">
+  <img src="three.jpg" alt="3" width="500" height="500">
+  <img src="61.jpg" alt="61" width="500" height="500">
+  <img src="55.jpg" alt="55" width="500" height="500">
+  <img src="46.jpg" alt="46" width="500" height="500">
+  <img src="43.jpg" alt="43" width="500" height="500">
+  <img src="eight.jpg" alt="8" width="500" height="500">
+  <img src="13.jpg" alt="13" width="500" height="500">
+  <img src="14.jpg" alt="14" width="500" height="500">
+  <img src="15.jpg" alt="15" width="500" height="500">
+  <img src="16.jpg" alt="16" width="500" height="500">
+  <img src="17.jpg" alt="17" width="500" height="500">
+  <img src="18.jpg" alt="18" width="500" height="500">
+</div>
+
+<div class="video-section ">
+<video src="mee.mp4" alt="My Video" height="600" width="600" controls>
+</video>
+<video src="cindy.mp4" alt="My Video" height="600" width="600" controls>
+</video>
+<video src="mi.mp4" alt="My Video" height="600" width="500" controls>
+</video></div>
+
+</body>
+</html>
