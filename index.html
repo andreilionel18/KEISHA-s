@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Comic Sans MS;
+      background-color: #F3CFC6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #F88379;
+      box-shadow: 0 0 15px rgba(248, 131, 121, 0.7);
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      font-size: 23px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #E37383;
+      color: black;
+      text-shadow: 0 0 10px #fff, 0 0 20px #F33A6A, 0 0 30px #F33A6A;
+      transform: scale(1.05);
+    }
+
+    .topnav a.active {
+      background-color: #F33A6A;
+      color: white;
+    }
+
+    /* Title */
+    h1 {
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px #F88379;
+      font-size: 110px;
+      margin-top: 30px;
+    }
+
+    /* Image Styling */
+    .main-image {
+      width: 100vw;
+      height: 600px;
+      display: block;
+      position: relative;
+      object-fit: cover;
+    }
+
+    /* Return to Homepage Button */
+    .return-btn {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #F33A6A;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      font-family: Comic Sans MS;
+      box-shadow: 0 0 10px rgba(243, 58, 106, 0.6);
+    }
+
+    .return-btn:hover {
+      background-color: #E37383;
+      color: black;
+      text-shadow: 0 0 10px white, 0 0 20px #F33A6A, 0 0 30px #F33A6A;
+      transform: translateX(-50%) scale(1.1);
+      box-shadow: 0 0 20px #F33A6A, 0 0 40px #F33A6A;
+    }
+
+    /* Container to hold image and button */
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="topnav">
+    <a class="active" href="All About me.html">Home</a>
+    <a href="mee.html">All About Me</a>
+    <a href="Friends.html">Friends</a>
+    <a href="Family.html">Family</a>
+  </div>
+
+  <!-- Title -->
+  <h1>Welcome!</h1>
+
+  <!-- Image with Button -->
+  <div class="image-container">
+    <img src="mi.jpg" alt="mi" class="main-image">
+    <a href="file:///C:/Users/Keisha/Desktop/ALL%20ABOUT%20KEISHA/OPPO%20Phone/Grade%209/ICT%20E-Portfolio/ICT%20E-Portfolio%20.html" class="return-btn">Return to Homepage</a>
+  </div>
+</body>
+</html>
