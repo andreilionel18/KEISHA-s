@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP E-Portfolio</title>
+<style>
+body {
+  background-image: url('economics.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-family: Comic Sans MS;
+  margin: 0;
+  color: #333;
+}
+
+/* TITLE */
+h1 {
+  background-color: #4F7942;
+  text-align: center;
+  font-size: 45px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #C3B1E1;
+  transition: 0.3s;
+  color: white;
+  border-style: double;
+}
+
+h1:hover {
+  box-shadow: 0 0 45px #D8BFD8;
+  transform: scale(1.03);
+  background-color: #90EE90;
+}
+
+/* LESSON BOX */
+.textbox {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  padding: 25px;
+  margin: 40px auto;
+  width: 85%;
+  font-size: 18px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.textbox:hover {
+  box-shadow: 0 0 35px rgba(255,255,255,0.6);
+  transform: scale(1.01);
+}
+
+/* LESSON TITLE */
+h2 {
+  text-align: center;
+  background-color: #228B22;
+  color: white;
+  margin: -25px -25px 15px -25px;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 20px #C3B1E1;
+  transition: 0.3s;
+}
+
+h2:hover {
+  box-shadow: 0 0 40px #D8BFD8;
+  transform: scale(1.02);
+  background-color: #C1E1C1;
+}
+
+/* H3 styling: smaller, centered, semi-transparent white */
+h3 {
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(195,177,225,0.5);
+  font-size: 24px;
+  margin: 0 auto 20px auto; /* center and space below */
+  width: fit-content;
+  transition: 0.3s;
+}
+
+h3:hover {
+  box-shadow: 0 0 30px rgba(195,177,225,0.8);
+  transform: scale(1.02);
+  background-color: ​rgba(255, 255, 255, 0.4);
+}
+
+/* WHITE TRANSPARENT BOX */
+.white-bg {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  color: black;
+  padding: 20px 25px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.white-bg:hover {
+  box-shadow: 0 0 25px rgba(255,255,255,0.8);
+  transform: scale(1.01);
+}
+
+/* GREEN BOX */
+.green-box {
+  background: rgba(79, 121, 66, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(195,177,225,0.6);
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+  display: none;
+  animation: fadeIn 0.6s ease;
+}
+
+.green-box.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* IMAGE */
+.white-bg img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 600px;
+  max-width: 90%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.15);
+}
+
+.white-bg img:hover {
+  box-shadow: 0 0 25px rgba(255,255,255,0.6);
+  transform: scale(1.08);
+}
+
+/* BUTTONS */
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #4F7942;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+button:hover {
+  background-color: #90EE90;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.8);
+}
+
+/* 🌸 RETURN BUTTON */
+.return-btn {
+  display: inline-block;
+  margin: 40px auto;
+  background: rgba(255, 182, 193, 0.3);
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 15px 35px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 30px;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.return-btn:hover {
+  background: rgba(166, 31, 40 0.6);
+  box-shadow: 0 0 25px rgba(255,255,255,0.8);
+  transform: scale(1.08);
+}
+
+</style>
+</head>
+
+<body>
+  <h1>Araling Panlipunan Yunit II - Maykroekonomiks</h1>
+
+  <!-- LESSON 1 -->
+  <div class="textbox">
+    <h2>Lesson 1: Demand</h2>
+
+    <div class="white-bg">
+      <img src="ceteris paribus.jpg" alt="ceteris paribus">
+      <p><b>DEMAND</b> - Dami ng produkto o serbisyo na gusto at kayang bilhin ng mga mamimili sa isang takdang presyo at partikular na panahon.</p>
+      <p><b>BATAS NG DEMAND</b> – Kapag tumataas ang presyo, bumababa ang dami ng gusto at kayang bilhin; kapag bumaba ang presyo, tumataas naman ang dami ng gusto at kayang bilhin.</p>
+      <p><b>CETERIS PARIBUS</b> – Ipinapalagay na presyo lamang ang nagbabago habang ang ibang salik ay nananatiling pareho.</p>
+      <p><b>KONSEPTO:</b></p>
+      <ol>
+        <li><b>SUBSTITUTION EFFECT</b> – Kung tumataas ang presyo ng produkto, hahanap ang mga mamimili ng pamalit na mas mura.</li>
+        <li><b>INCOME EFFECT</b> – Mas mataas ang kakayahan ng kita kapag mas mababa ang presyo.</li>
+      </ol>
+
+      <button onclick="toggleBox('salikBox1')">Mga Salik na Nakaaapekto</button>
+      <div id="salikBox1" class="green-box">
+        <b>MGA SALIK NA NAKAAAPEKTO SA DEMAND:</b>
+        <ul>
+          <li><b>KITA</b> – Tumataas ang demand kapag tumataas ang kita.</li>
+          <li><b>PANLASA</b> – Mas gusto, mas mataas ang demand.</li>
+          <li><b>DAMI NG MAMIMILI</b> – Bandwagon effect.</li>
+          <li><b>INAASAHAN SA PRESYO</b> – Kung tataas sa hinaharap, bibili na ngayon.</li>
+          <li><b>OKASYON</b> – Tumataas ang demand tuwing may okasyon.</li>
+          <li><b>KLIMA O PANAHON</b> – Depende sa panahon.</li>
+        </ul>
+      </div>
+    </div>
+
+     <!-- WHITE TRANSPARENT CONTENT 2 -->
+    <div class="white-bg">
+      <img src="demand.jpg" alt="demand">
+      <p><b>MATHEMATICAL FORMULA:</b> DEMAND = KAGUSTUHAN + KAKAYAHAN</p>
+      <p><b>DEMAND FUNCTION</b> – (Qd) = a - bP</p>
+      <p><b>D</b> – Dami ng demand</p>
+      <p><b>a</b> – Dami ng demand kapag presyo = 0</p>
+      <p><b>b</b> – Slope ng demand function</p>
+      <p><b>P</b> – Presyo</p>
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div class="textbox">
+    <h2>Lesson 2: Supply</h2>
+
+    <div class="white-bg">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
+        <img src="babasupply.jpeg" alt="babasupply">
+        <img src="taassupply.jpeg" alt="taassupply">
+      </div>
+
+      <p><b>SUPPLY</b> - Dami ng produkto o serbisyo na gustong ibenta ng mga prodyuser.</p>
+      <p><b>SUPPLY SCHEDULE</b> – Nagpapakita kung gaano karaming produkto ang nais gawin ng mga prodyuser.</p>
+      <p><b>SUPPLY FUNCTION</b> – Isang matematikal na equation na nagpapakita ng relasyon ng dami ng supply at presyo.</p>
+
+      <p><b>QS = -a + bP</b></p>
+
+      <button onclick="toggleBox('salikBox2')">Mga Salik na Nakaaapekto</button>
+      <div id="salikBox2" class="green-box">
+        <b>MGA SALIK NA NAKAAAPEKTO SA SUPPLY:</b>
+        <ul>
+          <li><b>TEKNOLOHIYA</b> – Mas mabilis na produksyon.</li>
+          <li><b>HALAGA NG PRODUKSIYON</b> – Kapag tumaas, bumababa ang supply.</li>
+          <li><b>DAMI NG NAGTITINDA</b> – Marami, mas mataas ang supply.</li>
+          <li><b>PRESYO NG IBA PANG PRODUKTO</b> – Lilipat ang prodyuser sa mas kumikitang produkto.</li>
+          <li><b>OKASYON</b> – Tumataas ang supply kapag may pangangailangan.</li>
+          <li><b>KLIMA</b> – Apektado ang dami ng nalilikha.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3 -->
+  <div class="textbox">
+    <h2>Lesson 3: Price Elasticity</h2>
+
+    <div class="white-bg">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
+        <img src="formulaPriceElasticity.jpg" alt="formulaPriceElasticity">
+        <img src="price elasticity supply.png" alt="price elasticity supply">
+      </div>
+
+      <p><b> ELASTISIDAD </b> - Pamamaraan upang masukat ang pagtugon ng mga mamimili at nagititinda sa pagbabago ng presyo.</p>
+      <p><b>ELASTISIDAD NG DEMAND</b> – Pagsukat ng porsyento ng pagtugon ng mamimili sa bawat porsyento ng pagbabago ng presyo.</p>
+      <p><b> ELASTISIDAD NG SUPPLY </b> – Pagsukat ng porsyento ng pagtugon ng nagtitinda sa bawat porsyento ng pagbabago ng presyo.</p>
+
+
+      <button onclick="toggleBox('elasticityBox')">Mga Uri ng Elastisidad</button>
+      <div id="elasticityBox" class="green-box">
+        <b>MGA URI NG ELASTISIDAD:</b>
+        <ol>
+          <li><b>ELASTIK (>1)</b> – Malaki ang pagtugon ng QD sa presyo.</li>
+          <li><b>DI-ELASTIK (<1)</b> – Maliit ang pagtugon ng QD sa presyo.</li>
+          <li><b>Unitary (=1)</b> – Pareho ang pagbabago ng presyo at QD.</li>
+          <li><b>Perfectly Elastic (∞)</b> – Maliit na pagbabago sa presyo ay malaking pagbabago sa QD.</li>
+          <li><b>Perfectly Inelastic (0)</b> – Walang pagbabago sa QD kahit tumaas o bumaba ang presyo.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+ <!-- LESSON 4 -->
+  <div class="textbox">
+    <h2>Lesson 4: Market Equilibrium</h2>
+
+    <div class="white-bg">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
+        <img src="equilibrium.webp" alt="equilibrium">
+        <img src="equilibrium2.jpeg" alt="equilibrium2">
+      </div>
+
+ <p><b> EQUILIBRIUM</b> -Isang kalagayan sa pamilihan na ang dami ng handa at kayang bilhing produkto o serbisyo ng mga konsyumer at ang handa at kayang ipagbiling produkto at serbisyo ng mga prodyuser ay pareho ayon sa presyong kanilang pinagkasunduan.</p>
+      <p><b>PUNTO NG EKWILIBRIYO</b> – Punto kung saan nagkaroon ng interaksyon ng demand at supply.</p>
+      <p><b>EKWILIBRIYONG PRESYO</b> – Pinagkasunduang presyo ng konsyumer at prodyuser.</p>
+      <p><b>EKWILIBRIYONG DAMI</b> – Napagkasunduang dami ng mga produkto o serbisyo.</p>
+<p><b>DISEKWILIBRIYO</b> – Anumang sitwasyon o kalagayan na hindi pareho ang quantity demanded at quantity supplied sa isang takdang presyo.</p>
+<p><b>SHORTAGE</b> – Ang dami ng demand ay mas malaki sa dami ng supply.</p>
+<p><b>SURPLUS</b> – Mas marami ang quantity supplied kaysa sa quantity demanded.</p>
+
+    <button onclick="toggleBox('equilibriumBox')">Mga Kaganapan sa Pagbabago sa Pamilihan</button>
+      <div id="equilibriumBox" class="green-box">
+        <b>MGA KAGANAPAN SA PAGBABAGO SA PAMILIHAN:</b>
+        <ol>
+          <li>Paglipat ng supply curve pakanan subalit walang pagbabago sa demand curve</li>
+          <li>Paglipat ng supply curve pakaliwa subalit walang pagbabago sa demand curve</li>
+          <li>Paglipat ng demand curve pakanan subalit walang pagbabago sa supply curve</li>
+          <li>Paglipat ng demand curve pakaliwa subalit walang pagbabago sa supply curve</li>
+          <li>Parehas ang paglipat ng demand at supply curve pakanan sa parehas na bahagdan</li>
+          <li>Parehas ang paglipat ng demand at supply curve pakaliwa sa parehas na bahagdan</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas malaki ang bahagdan ng pagbabago ng demand sa supply</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas maliit ang bahagdan ng pagbabago ng demand sa supply</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas malaki ang bahagdan ng pagbabago ng supply kaysa sa demand</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas maliit ang bahagdan ng pagbabago ng supply kaysa sa demand</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas malaki ang bahagdan ng pagbabago ng demand kaysa sa supply</li>
+          <li>Parehas na lumipat ang demand at supply curve pakanan subalit mas maliit ang bahagdan ng pagbabago ng demand kaysa sa supply</li>
+          <li>Paglipat ng supply curve pakanan at paglipat ng demand curve pakaliwa sa parehas na bahagdan</li>
+          <li>Paglipat ng supply curve pakaliwa at paglipat ng demand curve pakanan sa parehas na bahagdan</li>
+          <li>Walang pagbabago sa demand at supply</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+<!-- LESSON 5 -->
+  <div class="textbox">
+    <h2>Lesson 5: Iba't-ibang Estraktura ng Pamilihan</h2>
+
+    <div class="white-bg">
+
+<p><b> PAMILIHAN </b> -Ang nagsisilbing lugar kung saan nakakamit ng isang konsyumer ang sagot sa marami niyang pangangailangan at kagustuhan sa pamamagitan ng mga produkto at serbisyong handa at kaya niyan ikonsumo..</p>
+
+<!-- H3 Subtitle -->
+    <h3>3 ELEMENTO NG ISANG PAMILIHAN</h3>
+
+    <ul>
+     <li> Mamimili </li>
+     <li> Prodyuser/negosyante </li>
+     <li> Produkto </li>
+    </ul>
+
+<!-- H3 Subtitle -->
+    <h3>3 PAGKAKAIBA NG MGA ANYO/URI NG PAMILIHAN</h3>
+
+      <ul>
+     <li> Bilang at laki ng prodyuser o konsyumer </li>
+     <li> Uri ng produkto o serbisyo </li>
+     <li> Kontrol sa pagpasok sa pamilihan </li>
+     <li>Kontrol sa presyo </li>
+     <li>Paggamit ng di-presyong kompetisyon </li>
+    </ul>
+
+<!-- H3 Subtitle -->
+    <h3>URI NG PAMILIHAN</h3>
+
+ <ul>
+     <li> Lokal </li>
+     <li> Panrehiyon</li>
+     <li> Pambansa </li>
+     <li>Pandaigdigan </li>
+</ul>
+
+</div>
+
+    <!-- WHITE TRANSPARENT CONTENT 2 -->
+    <div class="white-bg">
+        <img src="pamilihan.jpg" alt="pamilihan">
+        
+<!-- H3 Subtitle -->
+    <h3>GANAP NA KOMPETISYON</h3>
+   
+<p><b> GANAP NA KOMPETISYON</b> -Isang estruktura ng pampamilihan na kung saan ang indibidwal na kalakalan ay may kontrol sa presyo ng kalakalan.</p>
+
+       <ol>
+     <li> Maraming konsyumer at prodyuser sa industriya </li>
+     <li> Ang mga produkto ng mga kalakalan sa industriya ay magkakatulad</li>
+     <li>  Ang mga kalakalan sa industriya ay tinatawag na price takers </li>
+     <li>Malayang nakapapasok at nakalalabas ang mga kalakalan sa produksyon </li>
+     <li>Walang kontrol sa presyo </li>
+</ol>
+
+   </div>
+
+ <!-- WHITE TRANSPARENT CONTENT 3 -->
+    <div class="white-bg">
+        <img src="diganap.jpg" alt="diganap">
+
+<!-- H3 Subtitle -->
+    <h3>DI-GANAP NA KOMPETISYON</h3>
+
+<p><b> MONOPOLYO </b> -Iisa ang prodyuser<br>
+Ang produkto ay walang malapit na kapalit<br>
+Ang monopolista price maker ng produkto<br>
+Napakahirap ang pagpasok ng mga bagong prodyuser sa ganitong pamilihan<br>
+Ang pag-anunsyo sa produk to ay maaaring gamitin o hindi.</p>
+
+<p><b>OLIGOPOLY </b> -IKakaunti lamang ang mga prodyuser sa industriya<br>
+Ang mga produkto ay maaaring magkakatulad o magkakaiba<br>
+Malaki ang kontrol ng mga kalakalan pagdating sa presyo<br>
+Mahirap ang papasok ng mga bagong prodyuser sa ganitong pamilihan<br>
+Gumagastos ng malaki ang mga kalakalan sa pag-aanunsyo, pananaliksik,& pag-unlad.</p>
+
+<p><b>MONOPOLISTIC COMPETITION </b> -May katamtamang dami ng mga prodyuser at konsyumer<br>
+Ang mga industriya ay agresibong nakikipagkompetensya sa isa’t isa<br>
+Mayroong malawakang pag-aanunsyo<br>
+May kaunting control sa presyo dahilan sa pagkakaiba-iba ng produkto<br>
+Madali ang pagpasok ng mga bagong prodyuser kung ikukumpara sa monopoly at oligopoly.</p>
+
+<p><b>MONOPSONY </b> -Mayroon lamang iisang konsyumer ngunit maraming prodyuser ng produkto at serbisyo <br>
+May kapangyarihan ang konsyumer na maimpluwensiyahan ang presyo sa pamilihan.</p>
+
+</div>
+</div>
+
+<!-- LESSON 6 -->
+  <div class="textbox">
+    <h2>Lesson 6: Bahaging Ginagampanan ng Pamahalaan sa Regulasyon ng mga Pamilihan</h2>
+
+    <div class="white-bg">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
+        <img src="control.jpg" alt="control">
+        <img src="ceiling.jpg" alt="ceiling">
+      </div>
+
+<!-- H3 Subtitle -->
+    <h3>ANG PAGKONTROL SA PRESYO NG PAMAHALAAN</h3>
+
+<p><b>PRICE CONTROL </b> -Pagtatadhana ng pamahalaan ng pinakamababa at pinakamataas na presyong maaaring itakda sa mga produkto at serbisyo.</p>
+
+<p><b>REPUBLIC ACT 7581 </b> -Price Control Act <br>
+Layunin na maisagawa ng pamahalaan ang pagkontrol sa presyo ng mga bilihin.</p>
+
+<p><b>PRICE CEILING </b> -Ang pinakamataas na presyong tinakda ng pamahalaan upang ipagbili ang mga produkto <br>
+Isinasagawa ng pamahalaan upang tulungan at bigyang proteksyon ang mga mamimili laban sa mga abusado at mapagsamantalang mga negosyante <br>
+Itinatakda ito na mas mababa sa equilibrium price na umiral sa pamilihan.</p>
+
+<p><b>PRICE SUPPORT</b> -Isinasagawa ng pamahalaan upang tulungan at bigyang proteksyon ang mga prodyuser upang mabayaran ang mga gastos ng produksyon.</p>
+
+<p><b>FLOOR PRICE</b> -Pinakamababa na presyong tinakda ng pamahalaan upang ipagbili ang mga produkto <br>
+Itinatakda ito na mas mataas sa equilibrium price na umiral sa pamilihan .</p>
+
+<p><b>PRICE FREEZE</b> - Ito ay ang pagbabawal ng pagtaas ng mga pangunahing bilihin o serbisyo</p>
+
+</div>
+</div>
+
+<!-- REFLECTION-->
+  <div class="textbox">
+    <h2>REFLECTION</h2>
+
+     <div class="white-bg">
+
+<p> Sa kwarter na ito, mas lalo ko pang natutunan ang ekonomiks. Mas lalo kong naintindihan kung bakit minsan ay sobrang baba o taas ng mga presyo, kung ano ang relasyon ng demand at supply atbp. Gamit ang mga aralin na ito, ako ay mayroon nang kaalaman kung paano gumagaan ang ekonomiya sa ating bansa. </p>
+
+</div></div>
+
+<script>
+function toggleBox(id) {
+  const box = document.getElementById(id);
+  box.classList.toggle('show');
+}
+</script>
+
+<a href="file:///C:/Users/Keisha/Desktop/ALL%20ABOUT%20KEISHA/OPPO%20Phone/Grade%209/ICT%20E-Portfolio/ICT%20E-Portfolio%20.html" class="return-btn">Return to Homepage</a>
+
+</body>
+</html>
